@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>TTS APP FOR DIFABLE</title>
+</head>
+
+<body>
+  <div class="box">
+    <h1 class="text-center"> - TTS APP FOR DIFABLE -</h1>
+    <form>
+      <div class="audio-box">
+        <input type="text" id="text-input" required="">
+        <label>Text</label>
+      </div>
+      <div>
+        <label for="rate">Rate</label>
+        <div id="rate-value" class="badge badgescolor float-right">1</div>
+        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+      </div>
+      <div>
+        <label for="pitch">Pitch</label>
+        <div id="pitch-value" class="badge badgescolor float-right"><b>1</b></div>
+        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+      </div>
+      <div>
+        <select id="voice-select" class="form-control form-control-sm"></select>
+      </div>
+      <button class="btn" type="submit">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Speak</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
